@@ -1,13 +1,14 @@
 import React from "react";
+import String from '../components/string/String';
+import Counter from '../components/counter/Counter';
 
 const App = () => {
 
-    const myText = 'Kenan is learning React \n because Kenan loves React';
-    const mySplitText= myText.split('\n').map((text) => <p>{text}</p>);
 
     return (
-        <div className="App">
-            {mySplitText}
+        <div className="App">   
+            <String />
+            <Counter />
         </div>
     )
 }
